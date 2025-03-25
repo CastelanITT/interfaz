@@ -239,4 +239,6 @@ upload_gist:
 ```
 ---
 
+LOOM de AWS  https://www.loom.com/share/ced8fdfc762c40fbae6c165a6ff9b0d1?sid=2c6d4289-c8aa-4cf8-9ad9-5760eab927a5
+
 
