@@ -9,6 +9,9 @@
 ###############################################################
 
 # Anuncia visualmente inicio de la actualización usando figlet
+#
+#  Video acompañamiento: https://www.loom.com/share/e2e3345c83b34eb199c73a14cbef1623?sid=4322e54c-85e9-48a7-9f60-7ad4d414322b
+
 # Corrida:
 #    $ wget https://raw.githubusercontent.com/tectijuana/interfaz/refs/heads/main/Class-Sessions/u2/setup64.sh
 #    $ chmod +x setup64.sh
