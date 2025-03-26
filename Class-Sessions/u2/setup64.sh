@@ -11,7 +11,8 @@
 # Anuncia visualmente inicio de la actualización usando figlet
 #
 #  Video acompañamiento: https://www.loom.com/share/e2e3345c83b34eb199c73a14cbef1623?sid=4322e54c-85e9-48a7-9f60-7ad4d414322b
-
+#  Y como configurar el VSCode https://www.loom.com/share/08169eca9baf4a97bc0c8ed983bd10b9?sid=d2d3bb39-362d-47d7-a136-992da2921cb6
+#    Solo que clientes macOS y Linux deben de poner permisos a la llave con $ chmod 400 llavesita.pem
 # Corrida:
 #    $ wget https://raw.githubusercontent.com/tectijuana/interfaz/refs/heads/main/Class-Sessions/u2/setup64.sh
 #    $ chmod +x setup64.sh
