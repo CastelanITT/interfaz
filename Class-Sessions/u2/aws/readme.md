@@ -21,8 +21,10 @@ La plataforma **AWS Academy** permite a estudiantes y docentes acceder a instanc
 
 Este entorno ofrece un laboratorio escalable, económico y seguro para el aprendizaje de bajo nivel en arquitecturas ARM modernas.
 
-
-https://www.loom.com/share/ced8fdfc762c40fbae6c165a6ff9b0d1?sid=f496b33d-b7fc-4ed1-9393-c10d0535a537
+- Bash Script
+https://www.loom.com/share/e2e3345c83b34eb199c73a14cbef1623?sid=4322e54c-85e9-48a7-9f60-7ad4d414322b
+- VSCODE con AWS
+https://www.loom.com/share/08169eca9baf4a97bc0c8ed983bd10b9?sid=1bb7313a-f32a-4870-ac94-bfe94cb4c0de
 
 
 ```bash
