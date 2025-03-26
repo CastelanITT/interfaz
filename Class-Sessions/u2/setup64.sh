@@ -98,12 +98,6 @@ figlet "Instalando GEF"
 # Instalación automatizada de GEF (GDB Enhanced Features) desde repositorio oficial
 bash -c "$(curl -fsSL https://gef.blah.cat/sh)"
 
-# Anuncia visualmente la instalación de Oh My Zsh
-figlet "Instalando Oh My Zsh"
-
-# Instalación automatizada de Oh My Zsh (framework para Zsh)
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-
 # Anuncia visualmente la verificación de GEF
 figlet "Verificando GEF"
 
@@ -112,7 +106,11 @@ gdb -ex "gef help" -ex quit
 
 echo "🎉 ¡Herramientas instaladas exitosamente!"
 
-sudo apt install -y   zsh 
+# Anuncia visualmente la instalación de Oh My Zsh
+figlet "Instalando Oh My Zsh"
+
+# Instalación automatizada de Oh My Zsh (framework para Zsh)
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ###############################################################
 # Fin del script
 ###############################################################
