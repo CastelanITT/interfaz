@@ -4,51 +4,89 @@
 # Script: Configuración rápida entorno desarrollo ARM64
 # Propósito: Instala herramientas esenciales de desarrollo,
 #            GEF y Oh My Zsh en sistemas ARM64 (Raspberry Pi).
-# Autor: [Tu nombre aquí]
-# Fecha: [Fecha de creación]
+# Autor: CHATGTP
+# Fecha: 25 DE MARZO DEL 2025
 ###############################################################
 
 # Anuncia visualmente inicio de la actualización usando figlet
 # Corrida:
-#    $ sudo apt install figlet
-#    $ chmod +x setup64bit.sh
-#    $ ./setup64bit.sh
+#    $ chmod +x setup64.sh
+#    $ ./setup64.sh
 # 
-figlet "Actualizando"
+#!/bin/bash
 
-# Actualización del sistema operativo y todos los paquetes instalados
-sudo apt update && sudo apt full-upgrade -y
+# =======================================================================
+# 🚀 Instalación Herramientas ARM64 (AWS EC2 Debian)
+# -----------------------------------------------------------------------
+# Este script instala paquetes esenciales para desarrollo en ensamblador
+# ARM64 y programación general.
+# =======================================================================
 
-# Anuncia visualmente la instalación de paquetes
-figlet "Instalando"
+# 🔄 Actualizamos primero el índice de paquetes disponibles
+sudo apt-get update
 
-# Instalación masiva de herramientas esenciales para desarrollo en ARM64
-sudo apt install -y \
-  build-essential \          # Herramientas básicas de compilación
-  gcc g++ \                  # Compiladores C y C++
-  binutils-aarch64-linux-gnu \ # Binutils para ARM64
-  gcc-aarch64-linux-gnu \    # Cross-compilador gcc ARM64
-  g++-aarch64-linux-gnu \    # Cross-compilador g++ ARM64
-  binutils \                 # Herramientas GNU para manejo de binarios
-  gdb-multiarch \            # Debugger multi-arquitectura
-  lldb \                     # Debugger LLVM
-  cmake \                    # Herramienta para generación de proyectos multiplataforma
-  git \                      # Control de versiones
-  curl wget \                # Descarga de archivos vía web
-  clang \                    # Compilador LLVM
-  clang-format \             # Formateador de código
-  valgrind \                 # Herramienta para análisis de memoria
-  strace \                   # Seguimiento de llamadas al sistema
-  vim nano \                 # Editores de texto
-  tmux screen \              # Multiplexores de terminal
-  htop \                     # Monitor del sistema
-  tree file \                # Listado visual de directorios y detección de tipos de archivo
-  unzip zip \                # Compresión y descompresión de archivos
-  asciinema \                # Grabación de sesiones de terminal
-  python3 python3-pip python3-dev \ # Herramientas Python
-  software-properties-common \ # Administración de repositorios adicionales
-  zsh     \                   # Shell avanzada
-  jd                          # Parsing de JSON para apoyar a API de GitHub
+# 📦 Instalamos las herramientas esenciales para desarrollo
+sudo apt-get install -y \
+  build-essential \
+  gcc \
+  g++ \
+  binutils \
+  gdb \
+  lldb \
+  cmake \
+  git \
+  curl \
+  wget \
+  clang \
+  clang-format \
+  valgrind \
+  strace \
+  vim \
+  nano \
+  tmux \
+  screen \
+  htop \
+  tree \
+  file \
+  unzip \
+  zip \
+  asciinema \
+  python3 \
+  python3-pip \
+  python3-dev \
+  software-properties-common \
+  zsh \
+  jq \
+  figlet
+
+# -----------------------------------------------------------------------
+# 📌 Explicación de los paquetes instalados:
+# -----------------------------------------------------------------------
+# build-essential: Herramientas básicas (gcc, make, etc.).
+# gcc y g++: Compiladores GNU para C y C++ (ARM64).
+# binutils: Utilidades GNU (ensamblador 'as', linker 'ld').
+# gdb y lldb: Depuradores (debuggers).
+# cmake: Herramienta de compilación multiplataforma.
+# git: Control de versiones para proyectos.
+# curl y wget: Herramientas para descargas desde consola.
+# clang y clang-format: Compilador LLVM y formateador de código.
+# valgrind: Análisis avanzado de memoria.
+# strace: Monitor de llamadas al sistema.
+# vim y nano: Editores de texto.
+# tmux y screen: Multiplexores de terminal.
+# htop: Monitor del rendimiento del sistema.
+# tree: Visualiza estructura de directorios.
+# file: Identificación de tipos de archivo.
+# unzip y zip: Herramientas para compresión.
+# asciinema: Grabación de sesiones de terminal.
+# python3, python3-pip, python3-dev: Entorno de desarrollo Python.
+# software-properties-common: Manejo de repositorios adicionales.
+# zsh: Shell avanzado alternativo a bash.
+# jq: Procesamiento de JSON desde consola.
+# figlet: Solo banners y avisos para el asciinema
+
+
+echo "🎉 Instalando depurador extension GEF"
 
 # Anuncia visualmente la instalación de GEF
 figlet "Instalando GEF"
@@ -68,6 +106,8 @@ figlet "Verificando GEF"
 # Verifica que GEF se instaló correctamente y muestra ayuda inicial
 gdb -ex "gef help" -ex quit
 
+
+echo "🎉 ¡Herramientas instaladas exitosamente!"
 ###############################################################
 # Fin del script
 ###############################################################
