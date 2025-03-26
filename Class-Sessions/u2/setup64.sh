@@ -10,7 +10,7 @@
 
 # Anuncia visualmente inicio de la actualización usando figlet
 # Corrida:
-#    $ wget https://github.com/tectijuana/interfaz/blob/ccfe09c26e8922abc1807327933b530d57db7ef0/Class-Sessions/u2/setup64bit.sh
+#    $ wget https://raw.githubusercontent.com/tectijuana/interfaz/refs/heads/main/Class-Sessions/u2/setup64.sh
 #    $ chmod +x setup64.sh
 #    $ ./setup64.sh
 # 
