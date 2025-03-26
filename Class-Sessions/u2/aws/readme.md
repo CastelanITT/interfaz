@@ -31,7 +31,7 @@ https://www.loom.com/share/08169eca9baf4a97bc0c8ed983bd10b9?sid=1bb7313a-f32a-48
 # Para descargar y aplicarlo a el entorno
 curl -O https://raw.githubusercontent.com/tectijuana/interfaz/refs/heads/main/Class-Sessions/u2/setup64.sh
 sudo chmod +x  setup64.sh
-sudo ./setup64bit.sh
+sudo ./setup64.sh
 ```
 
 NOTA: Recomiendo que la configuracion sea manual por esta vez  y valorar las funciones del script. Ya despues solo invocarlo pues conoce que esta configurando.
