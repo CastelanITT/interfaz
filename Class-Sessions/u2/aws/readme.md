@@ -29,7 +29,7 @@ https://www.loom.com/share/08169eca9baf4a97bc0c8ed983bd10b9?sid=1bb7313a-f32a-48
 
 ```bash
 # Para descargar y aplicarlo a el entorno
-curl -O https://github.com/tectijuana/interfaz/blob/65091b9dbf44d61a4561f0e4d6c371ab98e9bdf9/Class-Sessions/u2/setup64.sh
+curl -O https://raw.githubusercontent.com/tectijuana/interfaz/refs/heads/main/Class-Sessions/u2/setup64.sh
 sudo chmod +x  setup64.sh
 sudo ./setup64bit.sh
 ```
