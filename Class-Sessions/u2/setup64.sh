@@ -58,7 +58,8 @@ sudo apt-get install -y \
   software-properties-common \
   zsh \
   jq \
-  figlet
+  figlet \
+  mc
 
 # -----------------------------------------------------------------------
 # 📌 Explicación de los paquetes instalados:
@@ -85,7 +86,7 @@ sudo apt-get install -y \
 # zsh: Shell avanzado alternativo a bash.
 # jq: Procesamiento de JSON desde consola.
 # figlet: Solo banners y avisos para el asciinema
-
+# mc: midnight commandes es un file manager en consoka
 
 echo "🎉 Instalando depurador extension GEF"
 
