@@ -17,8 +17,7 @@
 #    $ wget https://raw.githubusercontent.com/tectijuana/interfaz/refs/heads/main/Class-Sessions/u2/setup64.sh
 #    $ chmod +x setup64.sh
 #    $ ./setup64.sh
-# 
-#!/bin/bash
+
 
 # =======================================================================
 # 🚀 Instalación Herramientas ARM64 (AWS EC2 Debian)
