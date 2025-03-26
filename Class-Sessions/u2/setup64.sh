@@ -24,7 +24,7 @@
 # =======================================================================
 
 # 🔄 Actualizamos primero el índice de paquetes disponibles
-sudo apt-get update
+sudo apt-get update && sudo apt upgrade -y
 
 # 📦 Instalamos las herramientas esenciales para desarrollo
 sudo apt-get install -y \
@@ -56,7 +56,6 @@ sudo apt-get install -y \
   python3-pip \
   python3-dev \
   software-properties-common \
-  zsh \
   jq \
   figlet \
   mc
@@ -108,8 +107,9 @@ figlet "Verificando GEF"
 # Verifica que GEF se instaló correctamente y muestra ayuda inicial
 gdb -ex "gef help" -ex quit
 
-
 echo "🎉 ¡Herramientas instaladas exitosamente!"
+
+sudo apt install -y   zsh 
 ###############################################################
 # Fin del script
 ###############################################################
