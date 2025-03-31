@@ -69,7 +69,8 @@ RUN apk update && apk upgrade && \
       figlet \
       mc \
       zsh \
-      asciinema
+      asciinema \
+      bash
 
 # Instala GEF (GDB Enhanced Features) y verifica su instalación
 RUN figlet "Instalando GEF" && \
