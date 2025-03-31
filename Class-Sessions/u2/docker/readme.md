@@ -90,3 +90,6 @@ Si tu contenedor no aparece:
    ```
 
 3. Elige tu contenedor y ¡voilà! Se abre una sesión de VS Code **dentro del contenedor**, como si fuera tu sistema operativo.
+
+   ![Screenshot 2025-03-30 at 8 02 14 p m](https://github.com/user-attachments/assets/6d7e92e1-ea28-4047-81b3-0c040081422e)
+
