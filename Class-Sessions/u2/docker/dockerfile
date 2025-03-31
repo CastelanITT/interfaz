@@ -14,7 +14,7 @@
 
 #
 # Generar la imagen y visualizar los recursos de su PC
-#      docker build --tag arm64/lenginterfaz:compilador .   (si un PUNTO al final)
+#      docker build --platform linux/arm64 -t compilador_arm64:latest .   (si un PUNTO al final)
 #      docker images
 
 # Correr y borrar al SALIR
