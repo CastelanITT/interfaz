@@ -24,10 +24,38 @@ Detén todos los contenedores en ejecución:
 5. Borrar redes no usadas
    docker network prune -f
 6. Usar Docker System Prune (opción más general)
-```
-
 Para borrar contenedores detenidos, imágenes no referenciadas y redes no utilizadas:
-```bash
-  docker system prune -a --volumes
+     docker system prune -a --volumes
 ```
 Este último comando es muy completo, ya que con la opción -a elimina todas las imágenes no utilizadas (no solo las dangling) y con --volumes también borra los volúmenes.
+
+---
+
+# Visual Studio Code en Docker como TERMINAL
+
+✅ Requisitos previos
+Docker ya está instalado y corriendo.
+Tienes una imagen o contenedor ya en ejecución.
+VS Code ya tiene instalada la extensión de Docker de Microsoft.
+🔍 Paso a paso para ver tu contenedor en VS Code
+Abre Visual Studio Code.
+En la barra lateral izquierda, haz clic en el ícono de Docker 🐳.
+En la sección Containers, espera a que cargue la lista de contenedores.
+Si tu contenedor ya está en ejecución, debería aparecer ahí.
+🔄 ¿No aparece el contenedor?
+Si tu contenedor no aparece:
+
+Asegúrate de que está corriendo con:
+docker ps
+Si está corriendo pero no se ve en VS Code, presiona F1 y ejecuta el comando:
+Docker: Refresh Explorer
+O haz clic derecho en el panel de Docker > Refresh.
+
+🧠 Tip extra: Abrir una terminal dentro del contenedor
+Haz clic derecho en el contenedor > Attach Shell o Inspect.
+También puedes hacer clic en "Open in Terminal" si está habilitado.
+🧩 ¿Quieres abrir un proyecto directamente dentro del contenedor?
+Instala también la extensión: Remote - Containers.
+Luego haz clic en F1 y escribe:
+Remote-Containers: Attach to Running Container...
+Elige tu contenedor y ¡voilà! Se abre una sesión de VS Code dentro del contenedor, como si fuera tu sistema operativo.
