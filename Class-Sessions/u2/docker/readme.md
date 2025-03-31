@@ -1,6 +1,10 @@
 ![Screenshot 2025-03-30 at 7 51 51 p m](https://github.com/user-attachments/assets/dd746913-d08b-4acb-b002-114ad08b683e)
 
 
+# VIDEO ACOMPAÑAMIENTO
+
+https://www.loom.com/share/f94fb721048b4c5ba044cd4e40004784?sid=c7548de2-5347-47ff-8b93-65a152900803
+
 ## Creación de la imagen (nota tiene un punto al final)
 ```bash
 docker build --platform linux/arm64 -t compilador_arm64:latest .
