@@ -1,0 +1,51 @@
+FROM arm64v8/alpine:latest
+LABEL maintainer="CHATGTP"
+
+ENV TERM=xterm
+WORKDIR /root
+
+# Actualiza el sistema e instala las herramientas esenciales
+RUN apk update && apk upgrade && \
+    apk add --no-cache \
+      build-base \
+      binutils \
+      gdb \
+      lldb \
+      cmake \
+      git \
+      curl \
+      wget \
+      clang \
+      valgrind \
+      strace \
+      vim \
+      nano \
+      tmux \
+      screen \
+      htop \
+      tree \
+      file \
+      unzip \
+      zip \
+      python3 \
+      py3-pip \
+      python3-dev \
+      jq \
+      figlet \
+      mc \
+      zsh \
+      bash
+
+# Instala GEF (GDB Enhanced Features) y verifica su instalación
+RUN figlet "Instalando GEF" && \
+    bash -c "$(curl -fsSL https://gef.blah.cat/sh)" && \
+    figlet "Verificando GEF" && \
+    gdb -ex "gef help" -ex quit
+
+# Instala Oh My Zsh de forma no interactiva
+RUN figlet "Instalando Oh My Zsh" && \
+    sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)" --unattended
+
+# Cambia el shell por defecto de root a zsh
+RUN sed -i 's/\/bin\/ash/\/bin\/zsh/' /etc/passwd
+
