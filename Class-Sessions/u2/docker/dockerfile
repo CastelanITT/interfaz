@@ -18,7 +18,7 @@
 #      docker images
 
 # Correr y borrar al SALIR
-#      docker run  -it --rm --name ensamblador arm64/lenginterfaz:compilador
+#      docker run --platform linux/arm64 -it --rm compilador_arm64:latest
 
 #
 # Borrado de imagenes
