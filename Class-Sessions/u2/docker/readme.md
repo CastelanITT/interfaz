@@ -31,7 +31,7 @@ Este último comando es muy completo, ya que con la opción -a elimina todas las
 
 ---
 
-![Screenshot 2025-03-30 at 7 57 04 p m](https://github.com/user-attachments/assets/73b16a6a-c8d4-44fd-8a93-ba4ac99471df)
+
 
 
 # Visual Studio Code en Docker como TERMINAL
@@ -52,6 +52,8 @@ Este último comando es muy completo, ya que con la opción -a elimina todas las
 4. Si tu contenedor ya está en ejecución, debería aparecer ahí.
 
 ---
+
+![Screenshot 2025-03-30 at 7 57 04 p m](https://github.com/user-attachments/assets/73b16a6a-c8d4-44fd-8a93-ba4ac99471df)
 
 ## 🔄 ¿No aparece el contenedor?
 
