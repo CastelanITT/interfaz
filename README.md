@@ -1,7 +1,11 @@
+<div align="center">
 
 <img width="483" alt="Screenshot 2025-01-30 at 12 42 16 p m" src="https://github.com/user-attachments/assets/6fc58cbd-e94e-445e-b746-35faa323da43" />
 
-# Rizzy Problemas  https://chatgpt.com/g/g-ikW4IppBT-arm64-assembly-tutor-for-raspbianos-linux
+# Rizzy Problemas  
+[https://chatgpt.com/g/g-ikW4IppBT-arm64-assembly-tutor-for-raspbianos-linux](https://chatgpt.com/g/g-ikW4IppBT-arm64-assembly-tutor-for-raspbianos-linux)
+
+</div>
 
 # Curso de Lenguajes de Interfaz
 
